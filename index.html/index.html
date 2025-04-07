@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Minha Namorada!</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ec407a;
+            font-size: 3em;
+        }
+        p {
+            color: #8e24aa;
+            font-size: 1.5em;
+            margin: 20px;
+        }
+        .heart {
+            font-size: 4em;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            background-color: #ec407a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #d81b60;
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            .heart {
+                font-size: 3em;
+            }
+
+            .button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Namorada, <span id="nome">Meu Amor!</span></h1>
+    <p>Esse site é só para você. Aqui, eu quero que saiba o quanto você é especial para mim.</p>
+    
+    <div class="heart">❤️</div>
+
+    <p>Eu te amo muito! 😘</p>
+
+    <button class="button" onclick="mostrarMensagem()">Clique aqui para uma surpresa!</button>
+
+    <script>
+        function mostrarMensagem() {
+            alert("Você é a melhor coisa que aconteceu na minha vida! Te amo para sempre!");
+        }
+    </script>
+</body>
+</html>
